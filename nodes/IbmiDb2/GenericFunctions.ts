@@ -11,6 +11,7 @@ export function getConfig(credentials: IDataObject) {
 		libraries: credentials.libraries as string,
 		'translate binary': `${credentials.translate_binary}` as string,
 		'translate boolean': `${credentials.translate_boolean}` as string,
+		'transaction isolation': credentials.transaction_isolation as string,
 		prompt: 'false' as string // Daemon
 	};
 }

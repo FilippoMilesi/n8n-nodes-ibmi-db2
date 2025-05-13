@@ -72,5 +72,12 @@ export class IbmiDb2JdbcApi implements ICredentialType {
 			default: true,
 			description: 'Specifies how Boolean objects are interpreted when setting the value for a character field/parameter using the PreparedStatement.setObject(), CallableStatement.setObject() or ResultSet.updateObject() methods. Setting the property to "true", would store the Boolean object in the character field as either "true" or "false". Setting the property to "false", would store the Boolean object in the character field as either "1" or "0". (Default: TRUE)',
 		},
+		{
+			displayName: 'Transaction Isolation',
+			name: 'transaction_isolation',
+			type: 'string',
+			default: 'read uncommitted',
+			description: 'Specifies the default transaction isolation',
+		},
 	];
 }
